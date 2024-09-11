@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom T-shirt Order Form</title>
+</head>
+<body style="font-family: Arial, sans-serif;">
+
+<h1 style="color: #4CAF50; text-align: center;">Order Your Customized T-shirt</h1>
+
+<form action="/" method="POST" style="max-width: 600px; margin: auto;">
+
+    <fieldset style="border: none;">
+        <legend style="font-size: 18px; color: #333;">Customize Your T-shirt</legend>
+        
+        <label for="tagline" style="color: #333;">Tagline on the Shirt:</label><br>
+        <input type="text" id="tagline" name="tagline" placeholder="Enter your tagline here" required
+               style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+        
+        <label for="color" style="color: #333;">Color:</label><br>
+        <select id="color" name="color" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            <option value="">Select a color</option>
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select><br>
+        
+        <label for="size" style="color: #333;">Size:</label><br>
+        <select id="size" name="size" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            <option value="">Select a size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="xlarge">X-Large</option>
+        </select><br>
+        
+        <label for="quantity" style="color: #333;">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="100" placeholder="Enter quantity" required
+               style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+        
+        <label for="delivery-date" style="color: #333;">Preferred Delivery Date:</label><br>
+        <input type="date" id="delivery-date" name="delivery_date" required
+               style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+    </fieldset>
+
+    <fieldset style="border: none;">
+        <legend style="font-size: 18px; color: #333;">Delivery Details</legend>
+        
+        <label for="name" style="color: #333;">Recipient's Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Full name" required
+               style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+        
+        <label for="address" style="color: #333;">Address:</label><br>
+        <textarea id="address" name="address" rows="4" placeholder="Enter full delivery address" required
+                  style="width: 100%; padding: 8px; margin-bottom: 10px;"></textarea><br>
+        
+        <label for="email" style="color: #333;">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required
+               style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+        
+        <label for="phone" style="color: #333;">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+               style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+    </fieldset>
+
+    <fieldset style="border: none;">
+        <legend style="font-size: 18px; color: #333;">Additional Comments</legend>
+        
+        <label for="comments" style="color: #333;">Special Instructions or Comments:</label><br>
+        <textarea id="comments" name="comments" rows="5" placeholder="Any special instructions or comments"
+                  style="width: 100%; padding: 8px;"></textarea><br>
+    </fieldset>
+
+    <div class="form-buttons" style="text-align: center; margin-top: 20px;">
+        <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px;">Submit Order</button>
+        <button type="reset" style="background-color: #f44336; color: white; padding: 10px 20px; border: none; border-radius: 4px; margin-left: 10px;">Reset Form</button>
+    </div>
+
+</form>
+
+</body>
+</html>
